@@ -1,0 +1,14 @@
+body {
+  background-image: url('./nature.jpg');
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: green;
+}

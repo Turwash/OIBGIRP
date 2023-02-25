@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <h1 class="text-center mb-3">Temperature Converter</h1>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <select id="inputUnit" class="form-control">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="farenheit">Farenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <select id="outputUnit" class="form-control">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="farenheit">Farenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input
+            type="text"
+            id="inputValue"
+            class="form-control"
+            placeholder="Enter temperature value"
+          />
+        </div>
+        <div class="col-md-6 mb-3">
+          <input
+            type="text"
+            id="outputValue"
+            class="form-control"
+            placeholder="Converted temperature"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <button id="convertBtn" class="btn btn-primary">Convert</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
